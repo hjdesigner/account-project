@@ -2,12 +2,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import Icon from '../icon'
 import imageDefault from '../../images/icon-default.png'
+import style from './nav-account.scss'
 
 const NavAccount = ({ text, link, image }) => (
-  <li>
-    <img src={image} />
-    <Link to={link}>{text}</Link>
+  <li className={style.item}>
+    <Link to={link}>
+      <Icon name={image} />
+      {text}
+    </Link>
   </li>
 )
 

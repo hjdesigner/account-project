@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  ul {
+    width: 100%;
+    max-width: 455px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

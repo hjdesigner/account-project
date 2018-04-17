@@ -15,7 +15,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^.+\\.(css|scss|jpg|png)$": "<rootDir>/config/CSSStub.js"
+      "^.+\\.(css|scss|jpg|png|svg)$": "<rootDir>/config/CSSStub.js"
     }
   },
   "standard": {
