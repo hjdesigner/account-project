@@ -1,6 +1,5 @@
 'use strict'
 import React, { Component } from 'react'
-import style from './test.scss'
 
 class App extends Component {
   constructor () {
@@ -10,7 +9,7 @@ class App extends Component {
 
   render () {
     return (
-      <h1 className={style.title}>teste</h1>
+      <h1>React</h1>
     )
   }
 }
