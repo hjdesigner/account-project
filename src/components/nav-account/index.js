@@ -3,7 +3,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Icon from '../icon'
-import imageDefault from '../../images/icon-default.png'
 import style from './nav-account.scss'
 
 const NavAccount = ({ text, link, image }) => (
@@ -18,7 +17,7 @@ const NavAccount = ({ text, link, image }) => (
 NavAccount.defaultProps = {
   text: 'Item',
   link: '/',
-  image: imageDefault
+  image: 'link'
 }
 
 NavAccount.propTypes = {
