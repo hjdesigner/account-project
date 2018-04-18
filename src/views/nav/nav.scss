@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   padding-left: 2%;
   padding-right: 2%;
+  &.hide {
+    display: none;
+  }
   ul {
     width: 100%;
     max-width: 455px;

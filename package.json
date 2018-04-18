@@ -11,7 +11,8 @@
     "build:analyzer": "cross-env ANALYZER=true yarn build",
     "storybook": "start-storybook -p 6006 -c storybook",
     "storybook:build": "cross-env NODE_ENV=production BABEL_ENV=production build-storybook -c storybook",
-    "update-packages": "node scripts/update.js"
+    "update-packages": "node scripts/update.js",
+    "server:json": "./node_modules/.bin/json-server server/db.json --port 3004"
   },
   "jest": {
     "moduleNameMapper": {
@@ -23,7 +24,8 @@
       "it",
       "expect",
       "describe",
-      "beforeEach"
+      "beforeEach",
+      "fetch"
     ]
   },
   "devDependencies": {
@@ -64,6 +66,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "json-server": "^0.12.1",
     "node-sass": "^4.7.2",
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",

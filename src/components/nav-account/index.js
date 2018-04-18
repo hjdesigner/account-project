@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 import Icon from '../icon'
 import style from './nav-account.scss'
 
-const NavAccount = ({ text, link, image }) => (
-  <li className={style.item}>
-    <Link to={link}>
+const NavAccount = ({ text, link, image, handleClick }) => (
+  <li className={style.item} data-id={link}>
+    <Link to={link} onClick={handleClick}>
       <Icon name={image} />
       {text}
     </Link>

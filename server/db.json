@@ -1,0 +1,11 @@
+{
+  "profile": {
+    "id": 1,
+    "name": "Henrique",
+    "lastname": "Melanda",
+    "email": "hjdesigner23@gmail.com",
+    "sex": "Masculino",
+    "cpf": "232.107.978-97",
+    "birthDate": "27/12/1990"
+  }
+}
