@@ -20,7 +20,6 @@ class App extends Component {
     }
     this.handleClickStatusNav = (e) => {
       var idNav = e.target.closest('li').getAttribute('data-id')
-      console.log(idNav)
       if (idNav === '/informacoes-de-conta') {
         fetch('http://localhost:3004/profile')
           .then(response => response.json())
@@ -40,11 +39,16 @@ class App extends Component {
   }
   componentWillMount () {
     const url = window.location.pathname
-    if (url !== '/') {
-      this.setState({
-        statusNav: 'hide',
-        user: 'test 3'
-      })
+
+    if (url === '/informacoes-de-conta') {
+      fetch('http://localhost:3004/profile')
+        .then(response => response.json())
+        .then((data) => {
+          this.setState({
+            statusNav: 'hide',
+            profile: data[0]
+          })
+        })
     }
   }
   render () {
