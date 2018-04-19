@@ -1,6 +1,7 @@
 'use strict'
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import style from './profile.scss'
 
 const Profile = ({ item }) => (
@@ -29,6 +30,9 @@ const Profile = ({ item }) => (
       <p className={style.title}>Data de Nascimento:</p>
       <p className={style.text}>{item.birthDate}</p>
     </li>
+    <Link to='/edit-profile' className={style.edit}>
+      Editar informações
+    </Link>
   </ul>
 )
 

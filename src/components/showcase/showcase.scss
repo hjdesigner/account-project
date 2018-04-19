@@ -1,0 +1,48 @@
+.showcase {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    border: 1px solid #eee;
+    padding-bottom: 0;
+    width: 49%;
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .image {
+    margin: 0;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 100px;
+    }
+  }
+  .title,
+  .de,
+  .por {
+    margin: 0 0 3px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+    font-size: .9em;
+    text-decoration: none;
+  }
+  .title {
+    font-weight: 600;
+  }
+  .de,
+  .por {
+    font-weight: 400;
+  }
+  .de {
+    font-size: .8em;
+    text-decoration: line-through;
+    color: #565454;
+  }
+}

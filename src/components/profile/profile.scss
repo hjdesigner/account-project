@@ -19,6 +19,24 @@
   .text {
     font-weight: 400;
   }
+  .edit {
+    width: 210px;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    background-color: #F5F5F5;
+    border: 1px solid #CCC;
+    color: #4A4A4A;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out;
+    &:hover{
+      background-color: #FFF;
+    }
+  }
 }
 @media screen and (min-width: 455px) {
   .profile {

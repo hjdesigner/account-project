@@ -5,15 +5,15 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-15'
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('<Profile />', () => {
+describe('<profile />', () => {
   let date, wrapper
   beforeEach(() => {
     date = {
       'id': 1,
-      'name': 'Henrique',
-      'lastname': 'Melanda',
+      'name': 'henrique',
+      'lastname': 'melanda',
       'email': 'hjdesigner23@gmail.com',
-      'sex': 'Masculino',
+      'sex': 'masculino',
       'cpf': '232.107.978-97',
       'birthDate': '27/12/1990'
     }

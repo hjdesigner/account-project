@@ -1,0 +1,59 @@
+.orderProduct {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .image {
+    margin: 0;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 100px;
+    }
+  }
+  li {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+  .info {
+    .name,
+    .description,
+    .date {
+      margin: 0 0 5px 0;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #000;
+      font-size: .9em;
+      text-align: left;
+    }
+    .description,
+    .date {
+      font-weight: 400
+    }
+    .name {
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (min-width: 455px) {
+  .orderProduct {
+    .image {
+      width: 20%
+    }
+    .info {
+      width: 70%;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .name,
+    .description,
+    .date {
+      font-size: 1em;
+    }
+  }
+}
