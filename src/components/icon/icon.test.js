@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Icon from './index'
 import { expect } from 'chai'
 import Enzyme, { shallow } from 'enzyme'
@@ -9,7 +8,7 @@ Enzyme.configure({ adapter: new Adapter() })
 describe('<Icon />', () => {
   let wrapper
   beforeEach(() => {
-    wrapper = shallow(<Icon name='user'/>)
+    wrapper = shallow(<Icon name='user' />)
   })
   it('Should that the component return svg', () => {
     expect(wrapper.find('svg')).to.have.length(1)

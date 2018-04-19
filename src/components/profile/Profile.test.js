@@ -9,13 +9,13 @@ describe('<Profile />', () => {
   let date, wrapper
   beforeEach(() => {
     date = {
-      "id": 1,
-      "name": "Henrique",
-      "lastname": "Melanda",
-      "email": "hjdesigner23@gmail.com",
-      "sex": "Masculino",
-      "cpf": "232.107.978-97",
-      "birthDate": "27/12/1990"
+      'id': 1,
+      'name': 'Henrique',
+      'lastname': 'Melanda',
+      'email': 'hjdesigner23@gmail.com',
+      'sex': 'Masculino',
+      'cpf': '232.107.978-97',
+      'birthDate': '27/12/1990'
     }
     wrapper = shallow(<Profile item={date} />)
   })
@@ -26,27 +26,27 @@ describe('<Profile />', () => {
     expect(wrapper.find('li')).to.have.length(6)
   })
   it('Should show name equal to date', () => {
-    const itemLi = wrapper.find('li').at(0);
+    const itemLi = wrapper.find('li').at(0)
     expect(itemLi.contains(date.name)).to.equal(true)
   })
   it('Should show last name equal to date', () => {
-    const itemLi = wrapper.find('li').at(1);
+    const itemLi = wrapper.find('li').at(1)
     expect(itemLi.contains(date.lastname)).to.equal(true)
   })
   it('Should show email equal to date', () => {
-    const itemLi = wrapper.find('li').at(2);
+    const itemLi = wrapper.find('li').at(2)
     expect(itemLi.contains(date.email)).to.equal(true)
   })
   it('Should show sex equal to date', () => {
-    const itemLi = wrapper.find('li').at(3);
+    const itemLi = wrapper.find('li').at(3)
     expect(itemLi.contains(date.sex)).to.equal(true)
   })
   it('Should show cpf equal to date', () => {
-    const itemLi = wrapper.find('li').at(4);
+    const itemLi = wrapper.find('li').at(4)
     expect(itemLi.contains(date.cpf)).to.equal(true)
   })
   it('Should show birth date equal to date', () => {
-    const itemLi = wrapper.find('li').at(5);
+    const itemLi = wrapper.find('li').at(5)
     expect(itemLi.contains(date.birthDate)).to.equal(true)
   })
 })

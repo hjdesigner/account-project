@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from 'views/header'
 import Nav from 'views/nav'
 import AccountInformation from 'views/account-information'
+import AddressList from 'views/address-list'
 import './sass/base.scss'
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
     super(props)
     this.state = {
       statusNav: '',
-      profile: {}
+      profile: {},
+      address: []
     }
     this.handleClickHeader = () => {
       this.setState({
@@ -26,6 +28,15 @@ class App extends Component {
           .then((data) => {
             this.setState({
               profile: data[0]
+            })
+          })
+      }
+      if (idNav === '/meus-endereco') {
+        fetch('http://localhost:3004/address')
+          .then(response => response.json())
+          .then((data) => {
+            this.setState({
+              address: data
             })
           })
       }
@@ -56,8 +67,10 @@ class App extends Component {
       <Router>
         <div className='container'>
           <Header handleClick={this.handleClickHeader} />
-          <Nav handleClick={this.handleClickStatusNav} statusNav={this.state.statusNav} />
+
+          <Route exact path='/' render={(...props) => (<Nav handleClick={this.handleClickStatusNav} statusNav={this.state.statusNav} />)} />
           <Route exact path='/informacoes-de-conta' render={(props) => (<AccountInformation profile={this.state.profile} />)} />
+          <Route exact path='/meus-endereco' render={(props) => (<AddressList list={this.state.address} />)} />
         </div>
       </Router>
     )

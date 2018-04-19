@@ -1,11 +1,39 @@
 {
-  "profile": {
-    "id": 1,
-    "name": "Henrique",
-    "lastname": "Melanda",
-    "email": "hjdesigner23@gmail.com",
-    "sex": "Masculino",
-    "cpf": "232.107.978-97",
-    "birthDate": "27/12/1990"
-  }
+  "profile": [
+    {
+      "id": 1,
+      "name": "Henrique",
+      "lastname": "Melanda",
+      "email": "hjdesigner23@gmail.com",
+      "sex": "Masculino",
+      "cpf": "232.107.978-97",
+      "birthDate": "27/12/1990"
+    }
+  ],
+  "address": [
+    {
+      "id": 0,
+      "title": "Principal",
+      "name": "Henrique Melanda",
+      "street": "Rua Atalaia Velha",
+      "number": "140",
+      "complement": "121C",
+      "neighborhood": "Vila Canero",
+      "state": "São Paulo",
+      "city": "SP",
+      "zipeCode": "03191-140"
+    },
+    {
+      "id": 1,
+      "title": "Secundário",
+      "name": "Caroline Duarte",
+      "street": "Rua Nebulosa",
+      "number": "203",
+      "complement": "",
+      "neighborhood": "Vila Formosa",
+      "state": "São Paulo",
+      "city": "SP",
+      "zipeCode": "00091-140"
+    }
+  ]
 }

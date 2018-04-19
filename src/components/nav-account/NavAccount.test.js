@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import NavAccount from './index'
 import { expect } from 'chai'
 import Enzyme, { shallow } from 'enzyme'

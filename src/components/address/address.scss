@@ -1,0 +1,36 @@
+.address {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .item {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .title,
+  .text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: .8em;
+  }
+  .title {
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+  .text {
+    font-weight: 400;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+}
+@media screen and (min-width: 455px) {
+  .address {
+    .title,
+    .text {
+      font-size: 1em;
+    }
+  }
+}
