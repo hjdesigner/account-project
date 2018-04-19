@@ -21,7 +21,7 @@ module.exports = {
   },
 
   htmlPluginConfig: {
-    title: 'The UX Library',
+    title: 'Account Project',
     template: join(paths.src, 'html', 'template.html')
   },
 
